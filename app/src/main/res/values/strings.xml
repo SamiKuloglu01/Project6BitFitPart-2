@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project 6</string>
+    <string name="log">Log</string>
+    <string name="dashboard">Dashboard</string>
+</resources>

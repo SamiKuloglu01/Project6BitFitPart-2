@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- RecyclerView to display the list of food items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFood"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1" />
+
+    <!-- TextView to display when there are no food items -->
+    <TextView
+        android:id="@+id/noFoodItemsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Food items to display"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+    android:gravity="center"
+    android:layout_marginTop="20dp"/>
+
+    <!-- Button to add new food -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddNewFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom"
+        android:text="Add new food"
+        app:cornerRadius="6dp"
+        app:backgroundTint="@color/Primary" />
+
+</LinearLayout>

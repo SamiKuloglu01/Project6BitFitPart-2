@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Food Label -->
+            <TextView
+                android:id="@+id/label_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:text="Food:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Food Input -->
+            <EditText
+                android:id="@+id/edit_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_food"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:hint="Enter food name"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <!-- Calories Label -->
+            <TextView
+                android:id="@+id/label_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_food"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:text="Calories:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Calories Input -->
+            <EditText
+                android:id="@+id/edit_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_calories"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:hint="Enter calorie count"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <!-- Divider Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/edit_calories"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_blue_light" />
+
+            <!-- Record Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_record_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_calories"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FF5722"
+                android:padding="12dp"
+                android:text="RECORD THIS FOOD"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                app:cornerRadius="8dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
